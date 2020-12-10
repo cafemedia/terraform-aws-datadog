@@ -47,6 +47,11 @@ variable "env" {
   type        = string
   default     = ""
 }
+variable "account_name" {
+  description = "The account tag to apply to all data sent to datadog"
+  type        = string
+  default     = ""
+}
 variable "account_specific_namespace_rules" {
   description = "account_specific_namespace_rules argument for datadog_integration_aws resource"
   type        = map
